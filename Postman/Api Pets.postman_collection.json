@@ -1,0 +1,295 @@
+{
+	"info": {
+		"_postman_id": "2923c798-5820-4858-98f9-056eb5401784",
+		"name": "Api Pets",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Images",
+			"item": [
+				{
+					"name": "http://localhost:8000/api/pets",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "owner_id",
+									"value": "6",
+									"type": "text"
+								},
+								{
+									"key": "vet_id",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "species_id",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "Lucas",
+									"type": "text"
+								},
+								{
+									"key": "age",
+									"value": "2 años",
+									"type": "text"
+								},
+								{
+									"key": "weight",
+									"value": "5 kilos",
+									"type": "text"
+								},
+								{
+									"key": "gender",
+									"value": "MALE",
+									"type": "text"
+								},
+								{
+									"key": "colour",
+									"value": "Gris",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/Nino/Desktop/gato.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/pets/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"pets",
+								""
+							]
+						},
+						"description": "POST Image"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8000/api/pets/1",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "owner_id",
+									"value": "6",
+									"type": "text"
+								},
+								{
+									"key": "vet_id",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "species_id",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "Lucas",
+									"type": "text"
+								},
+								{
+									"key": "age",
+									"value": "2 años",
+									"type": "text"
+								},
+								{
+									"key": "weight",
+									"value": "5 kilos",
+									"type": "text"
+								},
+								{
+									"key": "gender",
+									"value": "MALE",
+									"type": "text"
+								},
+								{
+									"key": "colour",
+									"value": "Gris",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/Nino/Desktop/gris.jpg"
+								},
+								{
+									"key": "_method",
+									"value": "PUT",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/pets/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"pets",
+								"1"
+							]
+						},
+						"description": "POST Images"
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "http://localhost:8000/api/pets",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"owner_id\": 1,\r\n    \"vet_id\": 1,\r\n    \"species_id\": 1,\r\n    \"name\": \"Bruno\",\r\n    \"age\": \"10 años\",\r\n    \"weight\": \"20 kilos\",\r\n    \"gender\": \"MALE\",\r\n    \"colour\": \"Blanco\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/pets",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"pets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/pets",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/pets",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"pets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/pets/1",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{        \r\n        \"owner_id\": 1,\r\n        \"vet_id\": 1,\r\n        \"species_id\": 1,\r\n        \"name\": \"Puchin\",\r\n        \"age\": \"12 años\",\r\n        \"weight\": \"10 kilos\",\r\n        \"gender\": \"MALE\",\r\n        \"colour\": \"Negro\"        \r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/pets/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"pets",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/pets/4",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/pets/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"pets",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

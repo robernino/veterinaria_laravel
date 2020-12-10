@@ -1,0 +1,216 @@
+{
+	"info": {
+		"_postman_id": "c526cda0-8fc1-433d-ae30-8a3bb28a3de8",
+		"name": "Tokens",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8000/api/login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{    \r\n    \"email\": \"robert_niru@hotmail.com\",\r\n    \"password\": \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login"
+					]
+				},
+				"description": "Create User Api Token"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/owners",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer EiQLuFSRWh1eOsPcLjbqSslbMvKUma5iaYUR9J0OXQcGK0WwDokAJT16Do1jI4YROGhbaxRsbV8d3kpEmr6DLDRHV5rxswfRZz6b",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/owners",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"owners"
+					]
+				},
+				"description": "GET"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/owners",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer nQwZO17xonCTzAHNYgz7yF1IQcqcyYdDWC9L1b0CXznPgjnGbSMufkk7lB7GUArAxb1KJXzvpypWDMUmd4x61im6U3gkXWTxjr2W",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Rodrigo\",\r\n    \"last_name\": \"Escalante Guerra\",\r\n    \"address\": \"Cruz Roja No. 130\",\r\n    \"telephone\": 8151617,\r\n    \"email\": \"rodrigo.escalante@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/owners",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"owners"
+					]
+				},
+				"description": "POST"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/owners/1",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer nQwZO17xonCTzAHNYgz7yF1IQcqcyYdDWC9L1b0CXznPgjnGbSMufkk7lB7GUArAxb1KJXzvpypWDMUmd4x61im6U3gkXWTxjr2W",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/owners/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"owners",
+						"1"
+					]
+				},
+				"description": "DELETE"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/user",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer nQwZO17xonCTzAHNYgz7yF1IQcqcyYdDWC9L1b0CXznPgjnGbSMufkk7lB7GUArAxb1KJXzvpypWDMUmd4x61im6U3gkXWTxjr2W",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user"
+					]
+				},
+				"description": "User Login"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/logout",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer nQwZO17xonCTzAHNYgz7yF1IQcqcyYdDWC9L1b0CXznPgjnGbSMufkk7lB7GUArAxb1KJXzvpypWDMUmd4x61im6U3gkXWTxjr2W",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/logout",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"logout"
+					]
+				},
+				"description": "Logout"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
